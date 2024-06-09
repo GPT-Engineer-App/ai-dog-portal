@@ -1,5 +1,5 @@
-import { Container, Text, VStack, Box, Heading, Button, Image, Flex } from "@chakra-ui/react";
-import { FaPaw, FaRobot, FaBone } from "react-icons/fa";
+import { Container, Text, VStack, Box, Heading, Button, Image, Flex, Link } from "@chakra-ui/react";
+import { FaPaw, FaRobot, FaBone, FaApple, FaGooglePlay } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -42,6 +42,18 @@ const Index = () => {
               Receive tips tailored to your dog's unique profile.
             </Text>
           </Box>
+        </Flex>
+        <Flex direction={["column", "row"]} spacing={4} justify="center" align="center" width="100%">
+          <Link href="https://apps.apple.com/us/app/example-ios-app/id123456789" isExternal>
+            <Button leftIcon={<FaApple />} colorScheme="teal" size="lg" mt={4} mb={4}>
+              Download on the App Store
+            </Button>
+          </Link>
+          <Link href="https://play.google.com/store/apps/details?id=com.example.androidapp" isExternal>
+            <Button leftIcon={<FaGooglePlay />} colorScheme="teal" size="lg" mt={4} mb={4}>
+              Get it on Google Play
+            </Button>
+          </Link>
         </Flex>
         <Button colorScheme="teal" size="lg" mt={8}>
           Get Started
