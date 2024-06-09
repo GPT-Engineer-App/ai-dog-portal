@@ -43,7 +43,7 @@ const Index = () => {
             </Text>
           </Box>
         </Flex>
-        <Flex direction={["column", "row"]} spacing={4} justify="center" align="center" width="100%">
+        <Flex direction={["column", "row"]} spacing={4} justify="center" align="center" width="100%" gap={4}>
           <Link href="https://apps.apple.com/us/app/example-ios-app/id123456789" isExternal>
             <Button leftIcon={<FaApple />} colorScheme="teal" size="lg" mt={4} mb={4}>
               Download on the App Store
